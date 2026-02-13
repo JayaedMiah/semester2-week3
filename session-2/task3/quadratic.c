@@ -21,8 +21,15 @@ int main( void ) {
      * You can define additional variable for intermediate results to make the code simpler.
      * Print out the final results for the 2 roots as float values.
      */
+    /*-b+-sqrt(b^2-4ac)/2*/
+    float disc = b*b - 4.0f*a*c;
 
+    float sqrt_disc = sqrt(disc);
+    root1 = (-b + sqrt_disc) / (2.0f * a);
+    root2 = (-b - sqrt_disc) / (2.0f * a);
     
+    printf("Root 1: %f\n",root1);
+    printf("Root 2: %f\n",root2);
 
     return 0;
 }

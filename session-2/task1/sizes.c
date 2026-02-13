@@ -9,7 +9,7 @@
 int main( void ) {
 
     char testChar;
-    int testInt;
+    unsigned int testInt;
     float testFloat;
 
     printf("Char size is %ld bytes\n",sizeof(testChar));
